@@ -2,7 +2,7 @@
 
 import clsx from 'clsx';
 import { AnimatePresence, motion } from 'framer-motion';
-import Image, { StaticImageData } from 'next/image';
+import Image, { StaticImageData } from 'next/Image';
 import { useState } from 'react';
 
 import { Images } from '../../../public/images';
