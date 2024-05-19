@@ -2,10 +2,10 @@
 
 import clsx from 'clsx';
 import { AnimatePresence, motion } from 'framer-motion';
-import Image, { StaticImageData } from 'next/Image';
+import Image, { StaticImageData } from 'next/image';
 import { useState } from 'react';
 
-import { Images } from '../../../public/images';
+import { Images } from '@/images';
 
 const possibleRotations = [1.3, -1.3, 1.3, -1.3, 1.3, -1.3];
 

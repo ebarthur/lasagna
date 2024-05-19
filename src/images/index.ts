@@ -1,4 +1,3 @@
-import breakfast from './barbera1.jpg';
 import polaroid from './barbera2.jpg';
 import beach from './maaha1.png';
 import woodhouse from './maaha2.jpg';
@@ -42,7 +41,6 @@ export const Images = [
     alt: 'Picture taken in Mauritius, Africa',
   },
   { img: river, title: 'Port Louis, Mauritius', alt: 'Picture taken in Mauritius, Africa' },
-  { img: breakfast, title: 'Cafe Barbera, Accra', alt: 'Picture taken in Accra, GH' },
   {
     img: light,
     title: 'Maaha Beach Resort, Ellembele District',
