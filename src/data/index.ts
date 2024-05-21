@@ -59,7 +59,7 @@ export const CurrentProjects: Project[] = [
 
     link: {
       label: 'github.com',
-      href: 'https://github.com/ebarthur',
+      href: 'https://github.com/ebarthur/lasagna',
     },
   },
   {
