@@ -7,4 +7,8 @@ module.exports = {
   importOrder: ['^[./]', '^@components/(.*)$'],
   importOrderSeparation: true,
   importOrderSortSpecifiers: true,
+
+  // .prettierrc
+
+  plugins: ['prettier-plugin-tailwindcss'],
 };

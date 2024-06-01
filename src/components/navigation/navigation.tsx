@@ -86,7 +86,7 @@ export const DesktopNavigation = (
           return (
             <a
               key={item.href}
-              className="transition hover:text-primary px-3 py-2"
+              className="px-3 py-2 transition hover:text-primary"
               href={item.href}
               target="_blank"
             >

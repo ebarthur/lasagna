@@ -26,17 +26,17 @@ export default function About() {
             <PageTitle className="text-2xl">A little about me</PageTitle>
             <p className="text-neutral-500">A mini-autobiography 🏄‍♂️</p>
           </div>
-          <div className="hover:underline underline-offset-4 group w-fit">
+          <div className="group w-fit underline-offset-4 hover:underline">
             <a href="https://github.com/ebarthur" target="_blank">
-              <PageTitle className="text-xl flex gap-2 items-center">
+              <PageTitle className="flex items-center gap-2 text-xl">
                 Ebenezer Arthur
                 <SquareArrowOutUpRight className="size-3 group-hover:stroke-primary" />
               </PageTitle>
             </a>
           </div>
 
-          <div className="mb-4 text-neutral-500 text-sm">Wilderness Explorer, Tribe 54</div>
-          <div className="grid md:grid-cols-3 break-inside-avoid-column gap-6">
+          <div className="mb-4 text-sm text-neutral-500">Wilderness Explorer, Tribe 54</div>
+          <div className="grid break-inside-avoid-column gap-6 md:grid-cols-3">
             <div className="text-sm md:my-14">
               Born in Ghana, in an environment that always inspire innovation. I have the mindset
               that everything around me is someone else&apos;s dedicated work, so I do my best to
@@ -46,7 +46,7 @@ export default function About() {
               Developing skills through hands-on experience is my guiding principle, and I embrace
               learning by doing, which allows me to explore passions and interests without guilt. I
               strive to imbue quality into every endeavor.
-              <p className="text-neutral-500 mt-4 italic">
+              <p className="mt-4 italic text-neutral-500">
                 &quot;Obsess over your craft, and mastery will follow.&quot; — @lasagna
               </p>
             </div>
@@ -54,7 +54,7 @@ export default function About() {
               The web is an endless canvas for creativity, and I&apos;m driven by its potential.
               Though I&apos;m only scratched the surface, I&apos;m excited by the continuous
               learning and innovation it offers.
-              <p className="text-sm underline underline-offset-4 text-primary mt-4 md:mt-8 flex gap-3 items-center">
+              <p className="mt-4 flex items-center gap-3 text-sm text-primary underline underline-offset-4 md:mt-8">
                 <a href="https://twitter.com/StatmanAartt" target="_blank">
                   Connect with me @StatmanAartt
                 </a>
@@ -62,7 +62,7 @@ export default function About() {
               </p>
             </div>
           </div>
-          <div className="w-fit my-7">
+          <div className="my-7 w-fit">
             <Message content={AboutMe.content} handle={AboutMe.handle} />
           </div>
         </div>

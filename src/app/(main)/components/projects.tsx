@@ -13,9 +13,9 @@ export default function Projects() {
         title="Featured Projects."
         intro="A list of projects I've worked on, I'm working on and I will work on."
       >
-        <h2 className="flex gap-4 items-center text-2xl font-bold tracking-tight">
+        <h2 className="flex items-center gap-4 text-2xl font-bold tracking-tight">
           <AlignVerticalSpaceAround />
-          <span className="bg-yellow-500/30 px-0.5 py-1 rounded-lg w-fit">Now</span>
+          <span className="w-fit rounded-lg bg-yellow-500/30 px-0.5 py-1">Now</span>
         </h2>
         <p className="mt-2 text-sm">Projects I currently work on.</p>
         <ul

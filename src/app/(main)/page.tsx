@@ -42,36 +42,36 @@ export default function Home() {
       />
       <Container className="mt-9">
         <div className="max-w-2xl">
-          <div className="flex gap-4 items-center">
-            <div className="h-6 w-6 bg-black/80 dark:bg-white animate-pulse"></div>
+          <div className="flex items-center gap-4">
+            <div className="h-6 w-6 animate-pulse bg-black/80 dark:bg-white"></div>
             <PageTitle>Lasagna</PageTitle>
           </div>
-          <div className="text-xs text-pretty">
-            <span className="font-semibold bg-neutral-500/30 px-0.5 py-1 rounded-lg">
+          <div className="text-pretty text-xs">
+            <span className="rounded-lg bg-neutral-500/30 px-0.5 py-1 font-semibold">
               {' '}
               /ləˈzanjə/
             </span>
             - pasta in the form of broad often ruffled ribbons
           </div>
 
-          <p className="my-6 max-w-2xl text-sm text-balance">
+          <p className="my-6 max-w-2xl text-balance text-sm">
             <a
               href="https://github.com/ebarthur"
               target="_blank"
-              className="underline text-primary"
+              className="text-primary underline"
             >
               I&apos;m Ebenezer Arthur.
             </a>{' '}
             I used to consider myself a{' '}
-            <code className="bg-green-500/30 px-0.5 py-1 rounded-lg">developer</code> but in
+            <code className="rounded-lg bg-green-500/30 px-0.5 py-1">developer</code> but in
             reality, I just love creating things. Currently, I&apos;m mostly focused on developing
-            great <code className="bg-yellow-500/30 px-0.5 py-1 rounded-lg">user</code> experiences
+            great <code className="rounded-lg bg-yellow-500/30 px-0.5 py-1">user</code> experiences
             using React & Next.js, while exploring the world of{' '}
-            <code className="bg-red-500/30 px-0.5 py-1 rounded-lg">backend</code> development.
+            <code className="rounded-lg bg-red-500/30 px-0.5 py-1">backend</code> development.
           </p>
           <div className="my-4">
             <a
-              className="inline-flex text-sm gap-x-1.5 align-baseline leading-none hover:underline hover:text-primary"
+              className="inline-flex gap-x-1.5 align-baseline text-sm leading-none hover:text-primary hover:underline"
               href="https://www.google.com/maps/place/Accra"
               target="_blank"
             >
@@ -101,11 +101,11 @@ export default function Home() {
       <Container>
         <div className="my-8">
           <div className="flex flex-col gap-2">
-            <h3 className="flex gap-4 items-center text-3xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 text-balance">
+            <h3 className="flex items-center gap-4 text-balance text-3xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100">
               <SkillIcon />
               Skills
             </h3>
-            <div className="flex flex-wrap gap-1 max-w-2xl">
+            <div className="flex max-w-2xl flex-wrap gap-1">
               {Skills.skills.map((skill) => {
                 return <Badge key={skill}>{skill}</Badge>;
               })}
