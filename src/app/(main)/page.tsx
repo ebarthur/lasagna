@@ -11,7 +11,7 @@ import Projects from '@/app/(main)/components/projects';
 import { Quote } from '@/app/(main)/components/quotes';
 import { useState, useEffect } from 'react';
 import { Section } from '@/components/ui/section';
-import { GlobeIcon } from 'lucide-react';
+import { GlobeIcon, PlusIcon } from 'lucide-react';
 import { CommandMenu } from '@/components/ui/command-menu';
 import { SkillIcon } from '@/components/icons/skill';
 
@@ -42,8 +42,10 @@ export default function Home() {
       />
       <Container className="mt-9">
         <div className="max-w-2xl">
-          <div className="flex items-center gap-4">
-            <div className="h-6 w-6 animate-pulse bg-black/80 dark:bg-white"></div>
+          <div className="flex items-center gap-2">
+            <div>
+              <PlusIcon className="size-3 animate-ping" />
+            </div>
             <PageTitle>Lasagna</PageTitle>
           </div>
           <div className="text-pretty text-xs">
@@ -55,14 +57,7 @@ export default function Home() {
           </div>
 
           <p className="my-6 max-w-2xl text-balance text-sm">
-            <a
-              href="https://github.com/ebarthur"
-              target="_blank"
-              className="text-primary underline"
-            >
-              I&apos;m Ebenezer Arthur.
-            </a>{' '}
-            I used to consider myself a{' '}
+            ❄ — Hi, I&apos;m Arthur. I used to consider myself a{' '}
             <code className="rounded-lg bg-green-500/30 px-0.5 py-1">developer</code> but in
             reality, I just love creating things. Currently, I&apos;m mostly focused on developing
             great <code className="rounded-lg bg-yellow-500/30 px-0.5 py-1">user</code> experiences

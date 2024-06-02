@@ -28,7 +28,7 @@ export default function About() {
           </div>
           <div className="group w-fit underline-offset-4 hover:underline">
             <a href="https://github.com/ebarthur" target="_blank">
-              <PageTitle className="flex items-center gap-2 text-xl">
+              <PageTitle className="flex items-center gap-1 text-xl">
                 Ebenezer Arthur
                 <SquareArrowOutUpRight className="size-3 group-hover:stroke-primary" />
               </PageTitle>
@@ -46,15 +46,15 @@ export default function About() {
               Developing skills through hands-on experience is my guiding principle, and I embrace
               learning by doing, which allows me to explore passions and interests without guilt. I
               strive to imbue quality into every endeavor.
-              <p className="mt-4 italic text-neutral-500">
+              <div className="mt-4 border-l-2 pl-4 text-neutral-500 dark:border-zinc-500">
                 &quot;Obsess over your craft, and mastery will follow.&quot; — @lasagna
-              </p>
+              </div>
             </div>
             <div className="text-sm md:my-6">
               The web is an endless canvas for creativity, and I&apos;m driven by its potential.
               Though I&apos;m only scratched the surface, I&apos;m excited by the continuous
               learning and innovation it offers.
-              <p className="mt-4 flex items-center gap-3 text-sm text-primary underline underline-offset-4 md:mt-8">
+              <p className="mt-4 flex items-center gap-3 text-sm text-primary underline underline-offset-4 md:mt-14">
                 <a href="https://twitter.com/StatmanAartt" target="_blank">
                   Connect with me @StatmanAartt
                 </a>

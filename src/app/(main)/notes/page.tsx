@@ -20,19 +20,19 @@ export default function Notes() {
         ]}
       />
       <div>
-        <Container className="mt-9 min-h-[60vh] ">
+        <Container className="mt-9">
           <PageTitle>Notes</PageTitle>
-          <p className="mt-2 text-neutral-500 text-sm">Weekly write-ups, journal and blogs</p>
-          <div className="flex flex-col items-center justify-center gap-4 mt-24">
+          <p className="mt-2 text-sm text-neutral-500">Weekly write-ups, journal and blogs</p>
+          <div className="mt-24 flex flex-col items-center justify-center gap-4">
             <SquirrelIcon className="size-32 stroke-neutral-500" />
             <p className="text-center">
               ...Sorry, I&apos;m still cooking this page. Try{' '}
               <a
                 href="https://lasagna.hashnode.dev"
                 target="_blank"
-                className="underline underline-offset-4 text-primary"
+                className="text-primary underline underline-offset-4"
               >
-                my blog on Hashnode <SquareArrowOutUpRight className="size-3 inline-flex" />
+                my blog on Hashnode <SquareArrowOutUpRight className="inline-flex size-3" />
               </a>{' '}
               instead!
             </p>
