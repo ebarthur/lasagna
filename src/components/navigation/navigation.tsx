@@ -15,8 +15,8 @@ export const NavigationItems = [
     type: 'internal',
   },
   {
-    name: 'Notes',
-    href: '/notes',
+    name: 'Blog',
+    href: '/blog',
     type: 'internal',
   },
   {
