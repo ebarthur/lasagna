@@ -23,8 +23,8 @@ const config = {
     },
     extend: {
       fontFamily: {
-        mono: ['var(--font-geist-mono)'],
-        sans: ['var(--font-geist-sans)'],
+        mono: ['var(--font-geist-mono)', ...fontFamily.mono],
+        sans: ['var(--font-geist-sans)', ...fontFamily.sans],
       },
       fontSize: {
         xs: ['0.8125rem', { lineHeight: '1.5rem' }],

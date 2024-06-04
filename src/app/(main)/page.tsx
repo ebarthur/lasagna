@@ -14,6 +14,22 @@ import { Section } from '@/components/ui/section';
 import { GlobeIcon, PlusIcon } from 'lucide-react';
 import { CommandMenu } from '@/components/ui/command-menu';
 import { SkillIcon } from '@/components/icons/skill';
+import { FlipWords } from '@/components/ui/flip-words';
+
+const Words = [
+  'Akwaaba!',
+  'Welcome!',
+  'Bienvenue!',
+  'Willkommen!',
+  'Bienvenido!',
+  'Benvenuto!',
+  'Välkommen!',
+  'Velkommen!',
+  'Welkom!',
+  'Bem-vindo!',
+  'Добро пожаловать',
+  '환영합니다',
+];
 
 type Availability = 'available' | 'unavailable' | 'limited';
 
@@ -41,28 +57,18 @@ export default function Home() {
         ]}
       />
       <Container className="mt-9">
-        <div className="max-w-2xl">
+        <div>
           <div className="flex items-center gap-2">
             <div>
               <PlusIcon className="size-3 animate-ping" />
             </div>
-            <PageTitle>Lasagna</PageTitle>
+            <PageTitle className="text-4xl">
+              <FlipWords words={Words} />
+            </PageTitle>
           </div>
-          <div className="text-pretty text-xs">
-            <span className="rounded-lg bg-neutral-500/30 px-0.5 py-1 font-semibold">
-              {' '}
-              /ləˈzanjə/
-            </span>
-            - pasta in the form of broad often ruffled ribbons
-          </div>
-
-          <p className="my-6 max-w-2xl text-balance text-sm">
-            ❄ — Hi, I&apos;m Arthur. I used to consider myself a{' '}
-            <code className="rounded-lg bg-green-500/30 px-0.5 py-1">developer</code> but in
-            reality, I just love creating things. Currently, I&apos;m mostly focused on developing
-            great <code className="rounded-lg bg-yellow-500/30 px-0.5 py-1">user</code> experiences
-            using React & Next.js, while exploring the world of{' '}
-            <code className="rounded-lg bg-red-500/30 px-0.5 py-1">backend</code> development.
+          <p className="mt-4 max-w-2xl text-balance text-base">
+            ❄ — Hi, I&apos;m Arthur. I used to consider myself a developer but in reality, I just
+            love creating things.
           </p>
           <div className="my-4">
             <a
@@ -76,8 +82,8 @@ export default function Home() {
           </div>
           <div className="text-sm">
             Current Availability:{' '}
-            <Badge variant="outline" className={AvailabilityStyles['limited']}>
-              Limited
+            <Badge variant="outline" className={AvailabilityStyles['available']}>
+              Available
             </Badge>
           </div>
           <div className="mt-6 flex gap-6">
