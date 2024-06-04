@@ -14,22 +14,6 @@ import { Section } from '@/components/ui/section';
 import { GlobeIcon, PlusIcon } from 'lucide-react';
 import { CommandMenu } from '@/components/ui/command-menu';
 import { SkillIcon } from '@/components/icons/skill';
-import { FlipWords } from '@/components/ui/flip-words';
-
-const Words = [
-  'Akwaaba!',
-  'Welcome!',
-  'Bienvenue!',
-  'Willkommen!',
-  'Bienvenido!',
-  'Benvenuto!',
-  'Välkommen!',
-  'Velkommen!',
-  'Welkom!',
-  'Bem-vindo!',
-  'Добро пожаловать',
-  '환영합니다',
-];
 
 type Availability = 'available' | 'unavailable' | 'limited';
 
@@ -60,17 +44,16 @@ export default function Home() {
         <div>
           <div className="flex items-center gap-2">
             <div>
-              <PlusIcon className="size-3 animate-ping" />
+              <PlusIcon className="size-4 animate-ping" />
             </div>
-            <PageTitle className="text-4xl">
-              <FlipWords words={Words} />
-            </PageTitle>
+            <PageTitle>Akwaaba! ⛷</PageTitle>
           </div>
-          <p className="mt-4 max-w-2xl text-balance text-base">
-            ❄ — Hi, I&apos;m Arthur. I used to consider myself a developer but in reality, I just
-            love creating things.
-          </p>
-          <div className="my-4">
+          <div className="mt-2 max-w-2xl text-balance text-sm">
+            ❄ — Hi, I&apos;m <code className="rounded-lg bg-green-500/30 p-0.5">Arthur🥡</code>. I
+            used to consider myself a developer but in reality, I just love creating things. In a
+            world full of possibilities, I&apos;m just a kid in a candy store🍬.
+          </div>
+          <div className="mb-2 mt-4">
             <a
               className="inline-flex gap-x-1.5 align-baseline text-sm leading-none hover:text-primary hover:underline"
               href="https://www.google.com/maps/place/Accra"

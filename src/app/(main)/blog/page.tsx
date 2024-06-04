@@ -22,7 +22,7 @@ export default function Notes() {
       <div>
         <Container className="mt-9">
           <PageTitle>Notes</PageTitle>
-          <p className="mt-2 text-sm text-neutral-500">Weekly write-ups, journal and blogs</p>
+          <p className="text-sm text-neutral-500">Weekly write-ups, journal and blogs</p>
           <div className="mt-24 flex flex-col items-center justify-center gap-4">
             <SquirrelIcon className="size-32 stroke-neutral-500" />
             <p className="text-center">

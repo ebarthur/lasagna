@@ -36,7 +36,7 @@ export const CurrentProjects: Project[] = [
   },
   {
     title: 'Changelog API',
-    techStack: ['Side Project', 'TypeScript', 'Node.js', 'Express, Prisma ORM'],
+    techStack: ['Side Project', 'TypeScript', 'Node.js', 'Express', 'Prisma ORM'],
     description: 'Backend API for documenting software product changelogs',
     link: {
       label: 'render.com',
