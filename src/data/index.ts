@@ -39,8 +39,8 @@ export const CurrentProjects: Project[] = [
     techStack: ['Side Project', 'TypeScript', 'Node.js', 'Express', 'Prisma ORM'],
     description: 'Backend API for documenting software product changelogs',
     link: {
-      label: 'render.com',
-      href: 'https://changelog-api-x2yq.onrender.com/',
+      label: 'github.com',
+      href: 'https://github.com/ebarthur/changelog-api',
     },
   },
   {
