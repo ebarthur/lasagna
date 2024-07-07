@@ -58,6 +58,7 @@ export default function Home() {
               className="inline-flex gap-x-1.5 align-baseline text-sm leading-none hover:text-primary hover:underline"
               href="https://www.google.com/maps/place/Accra"
               target="_blank"
+              rel="noreferrer"
             >
               <GlobeIcon className="size-3" />
               Accra, Ghana, GMT+0
@@ -65,7 +66,7 @@ export default function Home() {
           </div>
           <div className="text-sm">
             Current Availability:{' '}
-            <Badge variant="outline" className={AvailabilityStyles['available']}>
+            <Badge variant="outline" className={AvailabilityStyles.available}>
               Available
             </Badge>
           </div>

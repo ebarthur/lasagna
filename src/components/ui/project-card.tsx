@@ -1,4 +1,4 @@
-import { Project } from '@/data';
+import type { Project } from '@/data';
 import { Badge } from '@/components/ui/badge';
 import { Card } from '@/components/ui/card';
 import { LinkIcon } from '@/components/icons/link';
@@ -18,7 +18,7 @@ export const ProjectCard = ({ project }: Props) => {
         )}
       </div>
       <Card.Description>{project.description}</Card.Description>
-      <div className="mt-6 flex flex-wrap gap-1 z-10 mb-6">
+      <div className="z-10 mb-6 mt-6 flex flex-wrap gap-1">
         {project.techStack.map((techStackItem) => (
           <Badge key={techStackItem}>{techStackItem}</Badge>
         ))}
@@ -28,11 +28,11 @@ export const ProjectCard = ({ project }: Props) => {
           <p className="flex items-center">
             <LinkIcon className="h-6 w-6 flex-none" />
             <span className="ml-2">{project.link.label}</span>
-            <span className="ml-2 rounded-full bg-green-700 w-1 h-1" />
+            <span className="ml-2 h-1 w-1 rounded-full bg-green-700" />
           </p>
         ) : (
-          <p className="text-zinc-400 flex items-center gap-x-2">
-            Shut down <span className="rounded-full bg-red-700 w-1 h-1" />
+          <p className="flex items-center gap-x-2 text-zinc-400">
+            Shut down <span className="h-1 w-1 rounded-full bg-red-700" />
           </p>
         )}
       </div>

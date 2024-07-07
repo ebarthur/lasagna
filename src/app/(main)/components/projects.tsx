@@ -15,13 +15,10 @@ export default function Projects() {
       >
         <h2 className="flex items-center gap-4 text-2xl font-bold tracking-tight">
           <AlignVerticalSpaceAround />
-          <span className="w-fit rounded-lg bg-yellow-500/30 px-0.5 py-1">Now</span>
+          <span className="x-2 py-1">Now</span>
         </h2>
         <p className="mt-2 text-sm">Projects I currently work on.</p>
-        <ul
-          role="list"
-          className="mt-12 grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3"
-        >
+        <ul className="mt-12 grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3">
           {MyCurrentProjects.map((project) => (
             <motion.li
               key={project.title}
