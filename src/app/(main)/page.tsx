@@ -14,7 +14,6 @@ import { Section } from '@/components/ui/section';
 import { GlobeIcon, PlusIcon } from 'lucide-react';
 import { CommandMenu } from '@/components/ui/command-menu';
 import { SkillIcon } from '@/components/icons/skill';
-import Image from 'next/image';
 
 type Availability = 'available' | 'unavailable' | 'limited';
 
@@ -42,55 +41,37 @@ export default function Home() {
         ]}
       />
       <Container className="mt-9">
-        <div className="grid gap-6 md:grid-cols-2">
-          <div>
-            <div className="flex items-center gap-2">
-              <div>
-                <PlusIcon className="size-4 animate-ping" />
-              </div>
-              <PageTitle>Akwaaba! ⛷</PageTitle>
-            </div>
-            <div className="mt-2 max-w-2xl text-balance text-sm">
-              ❄ — Hi, I&apos;m <code className="rounded-lg bg-green-500/30 p-0.5">Arthur🥡</code>.
-              I used to consider myself a developer but in reality, I just love creating things. In
-              a world full of possibilities, I&apos;m just a kid in a candy store🍬.
-            </div>
-            <div className="mb-2 mt-4">
-              <a
-                className="inline-flex gap-x-1.5 align-baseline text-sm leading-none hover:text-primary hover:underline"
-                href="https://www.google.com/maps/place/Accra"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <GlobeIcon className="size-3" />
-                Accra, Ghana, GMT+0
-              </a>
-            </div>
-            <div className="text-sm">
-              Current Availability:{' '}
-              <Badge variant="outline" className={AvailabilityStyles.available}>
-                Available
-              </Badge>
-            </div>
-            <div className="mt-6 flex gap-6">
-              {SocialMedia.map((socialProfile) => (
-                <SocialLink
-                  key={socialProfile.name}
-                  aria-label={`Follow on ${socialProfile.name}`}
-                  href={socialProfile.link}
-                  icon={socialProfile.icon}
-                />
-              ))}
-            </div>
+        <div>
+          <PageTitle>Artur</PageTitle>
+          <div className="mt-2 max-w-2xl text-balance text-sm">
+            to be cracked you only need one thing: passion
           </div>
-          <div className="hidden md:block">
-            <Image
-              src="https://astrowind.vercel.app/_astro/hero-image.DwIC_L_T_Z4Abv2.webp"
-              alt="Flying astro"
-              width={500}
-              height={300}
-              className="object-cover"
-            />
+          <div className="mb-2 mt-4">
+            <a
+              className="inline-flex gap-x-1.5 align-baseline text-sm leading-none hover:text-primary hover:underline"
+              href="https://www.google.com/maps/place/Accra"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <GlobeIcon className="size-3" />
+              Accra, Ghana, GMT+0
+            </a>
+          </div>
+          <div className="text-sm">
+            Current Availability:{' '}
+            <Badge variant="outline" className={AvailabilityStyles.available}>
+              Available
+            </Badge>
+          </div>
+          <div className="mt-6 flex gap-6">
+            {SocialMedia.map((socialProfile) => (
+              <SocialLink
+                key={socialProfile.name}
+                aria-label={`Follow on ${socialProfile.name}`}
+                href={socialProfile.link}
+                icon={socialProfile.icon}
+              />
+            ))}
           </div>
         </div>
       </Container>

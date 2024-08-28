@@ -19,13 +19,7 @@ export const SocialMedia = [
 ] as const;
 
 export const Skills = {
-	skills: [
-		"JavaScript",
-		"TypeScript",
-		"React/Next.js",
-		"Node.js/Express",
-		"Go",
-	],
+	skills: ["JavaScript", "TypeScript", "Go", "C/C++", "Python"],
 };
 
 export type Project = {
@@ -89,16 +83,6 @@ export const CurrentProjects: Project[] = [
 		link: {
 			label: "github.com",
 			href: "https://github.com/ebarthur/go-api",
-		},
-	},
-	{
-		title: "Lasagna",
-		techStack: ["Side Project", "Next.js"],
-		description: "My portfolio website, the one you are currently on",
-
-		link: {
-			label: "github.com",
-			href: "https://github.com/ebarthur/lasagna",
 		},
 	},
 	{

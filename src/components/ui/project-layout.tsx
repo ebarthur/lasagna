@@ -17,13 +17,13 @@ export const ProjectLayout = ({
   return (
     <Container className="mt-12 sm:mt-24" {...rest}>
       <header className="max-w-3xl">
-        <h1 className="flex gap-4 items-center text-3xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 text-balance">
+        <h1 className="flex items-center gap-4 text-balance text-3xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100">
           <ProjectIcon />
           {title}
         </h1>
-        <p className="mt-6 text-sm text-balance">{intro}</p>
+        <p className="mt-6 text-balance text-sm">{intro}</p>
       </header>
-      <div className="mt-16 sm:mt-20">{children}</div>
+      <div className="mt-12">{children}</div>
     </Container>
   );
 };

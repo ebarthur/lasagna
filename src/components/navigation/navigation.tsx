@@ -20,9 +20,9 @@ export const NavigationItems = [
     type: 'internal',
   },
   {
-    name: 'Resume',
-    href: 'https://github.com/ebarthur',
-    type: 'external',
+    name: 'Notes',
+    href: '',
+    type: 'internal',
   },
   {
     name: 'About',
