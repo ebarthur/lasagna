@@ -27,10 +27,10 @@ export default function About() {
             <p className="text-neutral-500">A mini-autobiography 🏄‍♂️</p>
           </div>
           <div className="group w-fit underline-offset-4 hover:underline">
-            <a href="https://github.com/ebarthur" target="_blank">
+            <a href="https://github.com/ebarthur" rel="noreferrer" target="_blank">
               <PageTitle className="flex items-center gap-1 text-xl">
-                Ebenezer Arthur
-                <SquareArrowOutUpRight className="size-3 group-hover:stroke-primary" />
+                Artur
+                <SquareArrowOutUpRight className="size-2.5 group-hover:stroke-primary" />
               </PageTitle>
             </a>
           </div>
@@ -55,7 +55,7 @@ export default function About() {
               Though I&apos;m only scratched the surface, I&apos;m excited by the continuous
               learning and innovation it offers.
               <p className="mt-4 flex items-center gap-3 text-sm text-primary underline underline-offset-4 md:mt-14">
-                <a href="https://twitter.com/StatmanAartt" target="_blank">
+                <a href="https://x.com/StatmanAartt" rel="noreferrer" target="_blank">
                   Connect with me @StatmanAartt
                 </a>
                 <LucideTwitter className="size-3" />

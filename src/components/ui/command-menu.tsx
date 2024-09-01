@@ -36,10 +36,10 @@ export const CommandMenu = ({ links }: Props) => {
 
   return (
     <>
-      <p className="fixed bottom-0 left-0 right-0 z-20 hidden border-t border-t-muted dark:border-zinc-300/20 bg-white p-1 dark:bg-zinc-900 text-center dark:text-white text-sm text-muted-foreground print:hidden xl:block">
+      <p className="border-t-muted text-muted-foreground fixed bottom-0 left-0 right-0 z-20 hidden border-t bg-white p-1 text-center text-sm dark:border-zinc-300/20 dark:bg-zinc-900 dark:text-white xl:block print:hidden">
         Press{' '}
-        <kbd className="pointer-events-none inline-flex h-5 select-none items-center gap-1 rounded border bg-muted  px-1.5 font-mono text-[10px] font-medium text-muted-foreground opacity-100">
-          <span className="text-xs dark:text-white ">⌘</span>J
+        <kbd className="bg-muted text-muted-foreground pointer-events-none inline-flex h-5 select-none items-center gap-1 rounded border px-1.5 font-mono text-[10px] font-medium opacity-100">
+          <span className="text-xs dark:text-white">⌘</span>J
         </kbd>{' '}
         to open the command menu
       </p>
@@ -47,7 +47,7 @@ export const CommandMenu = ({ links }: Props) => {
         onClick={() => setOpen((open) => !open)}
         variant="outline"
         size="icon"
-        className="fixed bottom-4 right-4 flex z-20 rounded-full shadow-2xl print:hidden xl:hidden"
+        className="fixed bottom-4 right-4 z-20 flex rounded-full shadow-2xl xl:hidden print:hidden"
       >
         <CommandIcon className="my-6 size-6" />
       </Button>
@@ -55,16 +55,6 @@ export const CommandMenu = ({ links }: Props) => {
         <CommandInput placeholder="Type a command or search..." />
         <CommandList>
           <CommandEmpty>No results found.</CommandEmpty>
-          <CommandGroup heading="Actions">
-            <CommandItem
-              onSelect={() => {
-                setOpen(false);
-                window.open('/');
-              }}
-            >
-              <span>Resume</span>
-            </CommandItem>
-          </CommandGroup>
           <CommandGroup heading="Links">
             {links.map(({ url, title }) => (
               <CommandItem

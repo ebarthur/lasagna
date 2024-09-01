@@ -181,6 +181,6 @@ type About = {
 };
 
 export const AboutMe: About = {
-	content: "Farming would have been better tbvh.",
-	handle: "— @lasagna",
+	content: "many things to do, not much time",
+	handle: "— @me",
 };

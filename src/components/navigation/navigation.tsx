@@ -21,7 +21,7 @@ export const NavigationItems = [
   },
   {
     name: 'Notes',
-    href: '',
+    href: '/', // for now
     type: 'internal',
   },
   {
@@ -89,6 +89,7 @@ export const DesktopNavigation = (
               className="px-3 py-2 transition hover:text-primary"
               href={item.href}
               target="_blank"
+              rel="noreferrer"
             >
               {item.name}
             </a>

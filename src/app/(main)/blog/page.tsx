@@ -25,17 +25,23 @@ export default function Notes() {
           <p className="text-sm text-neutral-500">Weekly write-ups, journal and blogs</p>
           <div className="mt-24 flex flex-col items-center justify-center gap-4">
             <SquirrelIcon className="size-32 stroke-neutral-500" />
-            <p className="text-center">
-              ...Sorry, I&apos;m still cooking this page. Try{' '}
-              <a
-                href="https://lasagna.hashnode.dev"
-                target="_blank"
-                className="text-primary underline underline-offset-4"
-              >
-                my blog on Hashnode <SquareArrowOutUpRight className="inline-flex size-3" />
-              </a>{' '}
-              instead!
-            </p>
+            <div className="text-center text-sm leading-5 text-neutral-500">
+              <p className="">
+                Sorry, I&apos;m still cooking this page.
+                <p>
+                  Check out{' '}
+                  <a
+                    href="https://lasagna.hashnode.dev"
+                    target="_blank"
+                    className="text-primary underline underline-offset-4"
+                    rel="noreferrer"
+                  >
+                    my blog on Hashnode <SquareArrowOutUpRight className="inline-flex size-3" />
+                  </a>{' '}
+                  instead!
+                </p>
+              </p>
+            </div>
           </div>
         </Container>
       </div>

@@ -6,7 +6,7 @@ import { ThemeProvider } from '@/components/provider/theme-provider';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Lasagna | My portfolio',
+  title: 'Artur | My portfolio',
   description: 'This is my portfolio website',
 };
 
