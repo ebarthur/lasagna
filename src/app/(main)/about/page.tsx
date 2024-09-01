@@ -23,10 +23,10 @@ export default function About() {
       <Container className="mt-9 min-h-fit">
         <div>
           <div className="my-8">
-            <PageTitle className="text-2xl">A little about me</PageTitle>
-            <p className="text-neutral-500">A mini-autobiography 🏄‍♂️</p>
+            <PageTitle>Who? Me?</PageTitle>
+            <p className="text-neutral-500">Ok-ok a mini-autobiography 🏄‍♂️</p>
           </div>
-          <div className="group w-fit underline-offset-4 hover:underline">
+          <div className="underline-offset-6 group w-fit hover:underline">
             <a href="https://github.com/ebarthur" rel="noreferrer" target="_blank">
               <PageTitle className="flex items-center gap-1 text-xl">
                 Artur
@@ -46,15 +46,12 @@ export default function About() {
               Developing skills through hands-on experience is my guiding principle, and I embrace
               learning by doing, which allows me to explore passions and interests without guilt. I
               strive to imbue quality into every endeavor.
-              <div className="mt-4 border-l-2 pl-4 text-neutral-500 dark:border-zinc-500">
-                &quot;Obsess over your craft, and mastery will follow.&quot; — @lasagna
-              </div>
             </div>
             <div className="text-sm md:my-6">
               The web is an endless canvas for creativity, and I&apos;m driven by its potential.
               Though I&apos;m only scratched the surface, I&apos;m excited by the continuous
               learning and innovation it offers.
-              <p className="mt-4 flex items-center gap-3 text-sm text-primary underline underline-offset-4 md:mt-14">
+              <p className="mt-4 flex items-center gap-3 text-sm text-primary underline underline-offset-4">
                 <a href="https://x.com/StatmanAartt" rel="noreferrer" target="_blank">
                   Connect with me @StatmanAartt
                 </a>
